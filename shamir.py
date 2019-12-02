@@ -137,7 +137,7 @@ def split():
         ekseptejszyn()
 
     if (n < k):
-        ekseptejszyn()
+        print("Błąd!!!    n nie może być mniejsze od k")
 
     print("P(x) = (",end="")
 
