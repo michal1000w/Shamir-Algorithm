@@ -110,6 +110,11 @@ def reconstructSecret(secretPairs:[]):
     return secret
 
 
+def ekseptejszyn():
+    print("Niepoprawna wartość!!!")
+    from os import system
+    system("start nope.gif")
+    exit()
 
 
 
@@ -119,24 +124,20 @@ def split():
     try:
         secret = int(input())
     except:
-        print("Niepoprawna wartość!!!")
-        exit()
+        ekseptejszyn()
 
     print("")
     try:
         n = int(input("n = "))
     except:
-        print("Niepoprawna wartość!!!")
-        exit()
+        ekseptejszyn()
     try:
         k = int(input("k = "))
     except:
-        print("Niepoprawna wartość!!!")
-        exit()
+        ekseptejszyn()
 
     if (n < k):
-        print("n nie może byc mniejsze od k")
-        exit()
+        ekseptejszyn()
 
     print("P(x) = (",end="")
 
@@ -158,8 +159,7 @@ def restore():
     try:
         k = int(input("Wprowadź k = "))
     except:
-        print("Niepoprawna wartość!!!")
-        exit()
+        ekseptejszyn()
 
     print("Wprowadź pary: x,y  : ")
 
@@ -171,8 +171,7 @@ def restore():
             x = int(xy_list[0])
             y = int(xy_list[1])
         except:
-            print("Niepoprawna wartość!!!")
-            exit()    
+            ekseptejszyn()    
 
         secrets.append(SecretPair(x,y))
 
