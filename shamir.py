@@ -138,6 +138,7 @@ def split():
 
     if (n < k):
         print("Błąd!!!    n nie może być mniejsze od k")
+        exit()
 
     print("P(x) = (",end="")
 
